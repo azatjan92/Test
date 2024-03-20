@@ -73,7 +73,7 @@
 
                             <div class="mb-0 row" style="margin-bottom: 20px">
                                 <div class="col-md-6 offset-md-4">
-                                    <button style="margin-top: 20px; height: 35px; font-size: 14px; font-weight: bold; margin-left: 140px; color: white; background-color: #f1be48; border-radius: 5px" type="submit" class="btn btn-primary">
+                                    <button style="cursor: pointer; margin-top: 20px; height: 35px; font-size: 14px; font-weight: bold; margin-left: 140px; color: white; background-color: #f1be48; border-radius: 5px" type="submit" class="btn btn-primary">
                                         {{ __('Подтвердить') }}
                                     </button>
                                 </div>

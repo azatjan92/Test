@@ -1,7 +1,6 @@
 #main-nav {
     display: flex;
     justify-content: center;
-    height: 60px;
     align-items: center;
     margin-top: 20px;
     background-color: #e5750e;
@@ -13,7 +12,6 @@
     color: #e2e8f0;
     transition: background-color 0.5s;
     border-radius: 5px;
-    height: 60px;
     margin: 0 10px;
     display: flex;
 }
@@ -24,7 +22,6 @@
 }
 
 #nav {
-    height: 60px;
     align-items: center;
     background-color: #e5750e;
     font-size: 16px;
@@ -44,4 +41,45 @@
 #nav ul.nav li.nav-item a.nav-link:active {
     background-color: #4a5568;
 }
+
+@media only screen and (max-width: 320px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo_a span{
+        color: black;
+    }
+
+    .head{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar {
+        background-color: #e5750e;
+    }
+
+    .head_lg{
+        margin-right: 100px;
+    }
+
+    .head_right {
+        background-color: #e5750e;
+        width: 100%;
+    }
+
+    .head_left {
+
+    }
+
+
+    footer {
+        display: none;
+    }
+}
+
+
 

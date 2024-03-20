@@ -121,6 +121,12 @@ Route::middleware(['set_locale']) ->group(function () {
     Route::get('/news/{id}', 'App\Http\Controllers\NewsController@show')->name('news.show');
 
 
+
+    Route::get('/assistant', 'AssistantController@index');
+    Route::post('/assistant', 'AssistantController@processRequest');
+
+
+
 });
 
 

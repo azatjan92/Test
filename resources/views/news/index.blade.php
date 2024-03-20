@@ -3,10 +3,10 @@
 @section('title')Новости@endsection
 
 @section('main_content')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2" style="background-color: #e5750e; height: 1020px">
-                <div class="navbar" style="display: flex; flex-direction: column; color: white; gap: 20px; align-items: start; top: 20px">
+    <div class="news">
+        <div class="news_head" style="display: flex; gap: 10px">
+            <div class="news_right"  style="width: 20%; background-color: #e5750e; height: 1000px">
+                <div class="navbar" style="display: flex; flex-direction: column; color: white; gap: 20px;  top: 20px">
                     <div style="display: flex; justify-content: space-between; gap: 10px; margin-left: 240px">
                         <a href="{{ route('setlocale', ['locale' => 'ru']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ru' ? '#1E90FF' : 'white' }}">RU</a>
                         <a href="{{ route('setlocale', ['locale' => 'ky']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ky' ? '#1E90FF' : 'white' }}">KG</a>
@@ -59,7 +59,7 @@
                     </nav>
                 </div>
             </div>
-            <div class="col-lg-10" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px">
+            <div class="news_left" style="width: 80%">
                 <div>
                     <div class="logo_page" style="display: flex; gap: 20px; margin-top: 10px; justify-content: center; align-items: center;">
                         <a href="/">
@@ -108,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <footer style="text-align: center; margin-top: 150px; background-color: #007bff; width: 100%; height: 80px; line-height: 80px; position: fixed;">
+        <footer style="text-align: center; margin-top: 10px; background-color: #007bff; width: 100%; height: 80px; line-height: 80px; position: relative;">
             <a style="text-decoration: none" href="https://bishkek.gov.kg/ky/structures/object/22">
                 <span class="footer_txt" style="opacity: 1; color: #ffffff; transform: none; font-size: 18px; margin-left: 200px">@lang('messages.work')</span>
             </a>
