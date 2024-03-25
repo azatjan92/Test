@@ -11,9 +11,9 @@
                         <a href="{{ route('setlocale', ['locale' => 'ru']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ru' ? '#1E90FF' : 'white' }}">RU</a>
                         <a href="{{ route('setlocale', ['locale' => 'ky']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ky' ? '#1E90FF' : 'white' }}">KG</a>
                     </div>
-                    <div style="display: flex; gap: 30px; cursor: pointer">
-                        <a style="text-decoration: none; display: flex; gap: 30px;" href="/">
-                            <img style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
+                    <div id="logo_head"  style="display: flex; gap: 30px; cursor: pointer">
+                        <a id="logo_a" style="text-decoration: none; display: flex; gap: 30px;" href="/">
+                            <img class="logo_img" style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
                             <span style="font-size: 32px; font-weight: bold; color: white;">@lang('messages.header')</span>
                         </a>
                     </div>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="service_left" style="width: 80%">
-                <div>
+                <div class="service_menu">
                     <div class="logo_page" style="display: flex; gap: 20px; margin-top: 20px; justify-content: center; align-items: center;">
                         <a href="/">
                             <img style="width: 80px; height: 80px; border-radius: 10px;"  src="{{asset('image/log.jpg')}}" alt="logo">
@@ -74,22 +74,22 @@
                     <div class="logo_page" style="display: flex; justify-content: space-between; gap: 40px">
                         <div style="margin-top: 20px" class="logo_menu">
                             <p style="font-size: 24px">@lang('messages.product')</p>
-                            <ul style="display: flex; justify-content: space-between">
+                            <ul class="service_ul" style="display: flex; justify-content: space-between">
                                 <li> @lang('messages.manufactur')</li>
                                 <li>Дистрибьютор</li>
                                 <li>@lang('messages.service_prov')</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="auth_section" style="display: flex; flex-direction: column; width: 1400px; height: 700px; border: 1px solid black; background-color: #ffffff; margin-top: 20px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
+                    <div class="service_section" style="display: flex; flex-direction: column; width: 1400px; height: 700px; border: 1px solid black; background-color: #ffffff; margin-top: 20px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
                         <div class="section_head" style="display: flex; justify-content: space-between">
                             <div style="margin-left: 20px; margin-top: 40px">
-                                <div>
+                                <div class="service_title">
                                     <h4 style="font-size: 32px; font-weight: bold; text-align: center">@lang('messages.services')</h4>
                                     <p style="font-size: 18px; color: red; text-align: center">@lang('messages.contractor')</p>
-                                    <ul>
+                                    <ul class="service_uul">
                                         <li style="font-size: 22px; font-weight: bold">@lang('messages.contractor2')</li>
-                                        <div style="display: flex; justify-content: space-between; margin-top: 20px; ">
+                                        <div class="service_ol" style="display: flex; justify-content: space-between; margin-top: 20px; ">
                                             <div class="main_service" style="width: 600px; height: 450px; border: 1px solid black; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
                                                 <h4 style="text-align: center; margin-top: 10px">@lang('messages.head_power')</h4>
                                                 <div style="display: flex; justify-content: center; gap: 20px">
@@ -115,7 +115,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="main_service" style="width: 600px; height: 450px; border: 1px solid black; margin-right: 40px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
+                                            <div class="main_service" id="mainn" style="width: 600px; height: 450px; border: 1px solid black; margin-right: 40px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
                                                 <h4 style="text-align: center; margin-top: 10px">@lang('messages.spetenergo')</h4>
                                                 <div style="display: flex; justify-content: center; gap: 20px">
                                                     <img style="height: 20px; width: 40px; " src="{{asset('image/Flag.png')}}" alt="">

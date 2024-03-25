@@ -112,7 +112,7 @@
                         </tr>
                     </table>
                 @endforeach
-                <a href="/"><button style="margin-left: 400px; width: 100px; margin-top: 40px; height: 35px; border: 1px solid black; border-radius: 5px; color: white; background-color: #f1be48">@lang('messages.pay')</button></a>
+                <a href="/"><button class="btn_meter" style="margin-left: 400px; width: 100px; margin-top: 40px; height: 35px; border: 1px solid black; border-radius: 5px; color: white; background-color: #f1be48">@lang('messages.pay')</button></a>
             </div>
         </div>
     </div>

@@ -11,9 +11,9 @@
                             <a href="{{ route('setlocale', ['locale' => 'ru']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ru' ? '#1E90FF' : 'white' }}">RU</a>
                             <a href="{{ route('setlocale', ['locale' => 'ky']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ky' ? '#1E90FF' : 'white' }}">KG</a>
                         </div>
-                        <div style="display: flex; gap: 30px; cursor: pointer">
-                            <a style="text-decoration: none; display: flex; gap: 30px;" href="/">
-                                <img style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
+                        <div id="logo_head" style="display: flex; gap: 30px; cursor: pointer">
+                            <a id="logo_a" style="text-decoration: none; display: flex; gap: 30px;" href="/">
+                                <img class="logo_img" style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
                                 <span style="font-size: 32px; font-weight: bold; color: white;">@lang('messages.header')</span>
                             </a>
                         </div>
@@ -73,7 +73,7 @@
                     <div class="container">
                         <h4 style="text-align: center; margin-top: 60px">@lang('messages.subscriber')</h4>
                         <p style="text-align: center">@lang('messages.payments')</p>
-                        <div style="margin-left: 150px; margin-top: 40px">
+                        <div class="pay_ol" style="margin-left: 150px; margin-top: 40px">
                             <p style="color: red">@lang('messages.no_commission')</p>
                             <ol style="border: 1px solid black">
                                 <li style="font-size: 18px">@lang('messages.mbank')</li>

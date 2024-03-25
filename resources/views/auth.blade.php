@@ -11,10 +11,10 @@
                             <a href="{{ route('setlocale', ['locale' => 'ru']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ru' ? '#1E90FF' : 'white' }}">RU</a>
                             <a href="{{ route('setlocale', ['locale' => 'ky']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ky' ? '#1E90FF' : 'white' }}">KG</a>
                         </div>
-                        <div style="display: flex; gap: 30px; cursor: pointer">
-                            <a style="text-decoration: none; display: flex; gap: 30px;" href="/">
-                                <img style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
-                                <span style="font-size: 32px; font-weight: bold; color: white;">@lang('messages.header')</span>
+                        <div id="logo_head" style="display: flex; gap: 30px; cursor: pointer">
+                            <a id="logo_a" style="text-decoration: none; display: flex; gap: 30px;" href="/">
+                                <img class="logo_img" style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
+                                <p style="font-size: 32px; font-weight: bold; color: white;">@lang('messages.header')</p>
                             </a>
                         </div>
                         <nav id="nav" style="display: flex; flex-direction: column; align-items: start">
@@ -64,14 +64,14 @@
                         <a href="/">
                             <img style="width: 80px; height: 80px; border-radius: 10px;"  src="{{asset('image/log.jpg')}}" alt="logo">
                         </a>
-                        <div style="" class="logo_menu">
+                        <div  class="logo_menu">
                             <h2 style="font-size: 32px; font-weight: bold">@lang('messages.head_power')</h2>
                         </div>
                     </div>
                     <div class="auth_section" style="display: flex;  flex-direction: column; margin-left: 320px; width: 900px; height: 700px; border: 1px solid black; background-color: #ffffff; margin-top: 20px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
                         <div class="section_head" style="display: flex; justify-content: space-between">
-                            <div style="margin-left: 40px; margin-top: 140px">
-                                <div>
+                            <div class="section_menu" style="margin-left: 40px; margin-top: 140px">
+                                <div class="menu_title">
                                     <h4 style="font-size: 32px">@lang('messages.personal_cabinet')</h4>
                                     <p style="font-size: 14px; color: red">@lang('messages.resident_sub')</p>
                                 </div>
@@ -115,23 +115,23 @@
                                     </span>
                                                 @enderror
                                             </div>
-                                            <button style="width: 80px; height: 35px; background-color: #f1be48; border-radius: 5px; margin-top: 10px" type="submit" >@lang('messages.enter')</button>
-                                            <button style=" width: 120px; height: 35px; background-color: #f1be48; border-radius: 5px; margin-bottom: 40px; margin-left: 40px">
+                                            <button class="btn_auth" style="width: 80px; height: 35px; background-color: #f1be48; border-radius: 5px; margin-top: 10px" type="submit" >@lang('messages.enter')</button>
+                                            <button class="btn_auth" style=" width: 120px; height: 35px; background-color: #f1be48; border-radius: 5px; margin-bottom: 40px; margin-left: 40px">
                                                 <a style="text-decoration: none; color: black" href="{{ route('register') }}">@lang('messages.registration')</a>
                                             </button>
                                         </form>
                                     @endif
                                 </div>
                             </div>
-                            <div style="position: relative; width: 500px; height: 500px; overflow: hidden;">
-                                <div style="background-color: #f1be48; width: 700px; height: 590px; border-radius: 50%; position: absolute; bottom: 144px; left: 0;"></div>
-                                <div style="position: relative; z-index: 1; padding: 20px;">
+                            <div class="auth_menu" style="position: relative; width: 500px; height: 500px; overflow: hidden;">
+                                <div class="auth_img" style="background-color: #f1be48; width: 700px; height: 590px; border-radius: 50%; position: absolute; bottom: 144px; left: 0;"></div>
+                                <div class="auth_title"  style="position: relative; z-index: 1; padding: 20px;">
                                     <h2 style="font-size: 28px; color: red">@lang('messages.support')</h2>
-                                    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px">
+                                    <div class="auth_p" style="display: flex; justify-content: center; gap: 20px; margin-top: 40px">
                                         <img style="width: 80px; height: 40px" src="{{asset('image\phone.svg')}}" alt="">
                                         <p style="font-size: 32px; font-weight: bold">0312 49-10-11</p>
                                     </div>
-                                    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 40px">
+                                    <div class="auth_p" style="display: flex; justify-content: center; gap: 20px; margin-top: 40px">
                                         <img style="width: 80px; height: 40px" src="{{asset('image\email.svg')}}" alt="">
                                         <p style="font-size: 32px; font-weight: bold">kpbte@mail.ru</p>
                                     </div>

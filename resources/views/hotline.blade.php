@@ -11,9 +11,9 @@
                         <a href="{{ route('setlocale', ['locale' => 'ru']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ru' ? '#1E90FF' : 'white' }}">RU</a>
                         <a href="{{ route('setlocale', ['locale' => 'ky']) }}" style="text-decoration: none; font-size: 16px; font-weight: bold; color: {{ app()->getLocale() === 'ky' ? '#1E90FF' : 'white' }}">KG</a>
                     </div>
-                    <div style="display: flex; gap: 30px; cursor: pointer">
-                        <a style="text-decoration: none; display: flex; gap: 30px;" href="/">
-                            <img style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
+                    <div id="logo_head" style="display: flex; gap: 30px; cursor: pointer">
+                        <a id="logo_a" style="text-decoration: none; display: flex; gap: 30px;" href="/">
+                            <img class="logo_img" style="width: 50px; height: 50px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
                             <span style="font-size: 32px; font-weight: bold; color: white;">@lang('messages.header')</span>
                         </a>
                     </div>
@@ -62,40 +62,39 @@
             <div class="hotline_left" style="width: 80%">
                 <div class="contents" style=" margin-top: 20px; padding: 0 30px">
                     <div >
-                        <div style="background-color: #1e90ff; color: #e2e8f0; height: 100px; align-items: center; ">
+                        <div class="hotline_title" style="background-color: #1e90ff; color: #e2e8f0; height: 100px; align-items: center; ">
                             <h2 style="text-align: center; line-height: 100px;">@lang('messages.hotlines')</h2>
                         </div>
-                        <div style="display: flex; justify-content: space-between; width: 100%">
+                        <div class="hotline_img" style="display: flex; justify-content: space-between; width: 100%">
                             <img style="width: 80px; height: 80px; border-radius: 10px; margin-top: 40px;"  src="{{asset('image/logo-mini.png')}}" alt="logo">
                             <div style="display: flex; gap: 20px; flex-direction: column">
                                 <h3 style="margin-top: 40px; text-align: center">@lang('messages.dispatch')</h3>
-                                <div style="display: flex; align-items: center; gap: 70px">
-                                    <div style="display: flex; gap: 10px">
+                                <div class="hotline_number" style="display: flex; align-items: center; gap: 70px">
+                                    <div class="hotline_menu_img" style="display: flex; gap: 10px">
                                         <img style="width: 35px; height: 35px; border-radius: 10px;  color: #718096; "  src="{{asset('image/WhatsApp.png')}}" alt="logo">
                                         <p style="font-size: 28px;  font-weight: bold; ">0701 777110</p>
                                     </div>
-                                    <div style="display: flex; gap: 10px">
+                                    <div class="hotline_menu_img" style="display: flex; gap: 10px">
                                         <img style="width: 25px; height: 25px; border-radius: 10px;  color: #718096; margin-top: 5px"  src="{{asset('image/phone.svg')}}" alt="logo">
                                         <p style="font-size: 28px; font-weight: bold">0312 212906</p>
                                     </div>
                                 </div>
                             </div>
-                            <img style="width: 80px; height: 80px; border-radius: 10px; margin-top: 40px; color: #718096"  src="{{asset('image/log.jpg')}}" alt="logo">
+                            <img class="hotline_pic" style="width: 80px; height: 80px; border-radius: 10px; margin-top: 40px; color: #718096"  src="{{asset('image/log.jpg')}}" alt="logo">
                         </div>
                         <div style="display: flex; gap: 20px; flex-direction: column; text-align: center">
                             <h3 style="margin-top: 40px">@lang('messages.readings')</h3>
-                            <div style="display: flex; align-items: center; gap: 70px; margin-left: 380px">
-                                <div style="display: flex; gap: 10px">
+                            <div class="hotline_numb" style="display: flex; align-items: center; gap: 70px; margin-left: 480px">
+                                <div class="hotline_menu_img" style="display: flex; gap: 10px">
                                     <img style="width: 35px; height: 35px; border-radius: 10px;  color: #718096; "  src="{{asset('image/WhatsApp.png')}}" alt="logo">
                                     <p style="font-size: 28px;  font-weight: bold; ">0504 828229</p>
                                 </div>
-                                <div style="display: flex; gap: 10px">
+                                <div class="hotline_menu_img" style="display: flex; gap: 10px;">
                                     <img style="width: 25px; height: 25px; border-radius: 10px;  color: #718096; margin-top: 5px"  src="{{asset('image/phone.svg')}}" alt="logo">
                                     <p style="font-size: 28px; font-weight: bold">0312 492535</p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="menu" style="display: flex; flex-direction: column; gap: 20px; font-size: 18px; margin: 0 10px; margin-top: 40px">
                         <h4>@lang('messages.p1')</h4>

@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: #e5750e;
     font-size: 16px;
     font-weight: bold;
 }
@@ -23,7 +22,6 @@
 
 #nav {
     align-items: center;
-    background-color: #e5750e;
     font-size: 16px;
     font-weight: bold;
 }
@@ -42,44 +40,355 @@
     background-color: #4a5568;
 }
 
-@media only screen and (max-width: 320px) {
-    .header {
-        display: flex;
+@media screen and (max-width: 320px) {
+
+    .head {
         flex-direction: column;
-    }
-
-    #logo_a span{
-        color: black;
-    }
-
-    .head{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar {
-        background-color: #e5750e;
-    }
-
-    .head_lg{
-        margin-right: 100px;
     }
 
     .head_right {
-        background-color: #e5750e;
-        width: 100%;
+        width: 100% !important;
     }
+
 
     .head_left {
-
+        width: 100% !important;
     }
 
+    #logo_a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .navbar {
+        top: 10px;
+    }
+
+    .nav {
+        margin-top: 5px !important;
+        gap: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .nav-link img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav-link span {
+        margin-top: 0 !important;
+    }
+
+    .rounded_a {
+        font-size: 14px !important;
+    }
 
     footer {
+        height: 80px !important;
+        line-height: 40px !important;
+    }
+
+    .foot_span {
+        font-size: 12px !important;
+        margin-left: 0 !important;
+    }
+
+    .content-right img {
+        height: 400px !important;
+    }
+
+
+
+    /*auth*/
+
+    .auth_head {
+        flex-direction: column;
+    }
+
+    .auth_right {
+        width: 100% !important;
+        height: 750px !important;
+    }
+
+    .logo_menu h2 {
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .section_head {
+        flex-direction: column;
+    }
+
+    .auth_section {
+        width: 320px !important;
+        height: 600px !important;
+        margin-left: 0 !important;
+    }
+
+    .auth_img {
+        width: 318px !important;
+        height: 215px !important;
+        border-radius: 0 !important;
+        bottom: 136px !important;
+    }
+
+    .auth_title {
+        padding: 10px !important;
+    }
+
+    .auth_title h2 {
+        font-size: 17px !important;
+        text-align: center;
+    }
+
+    .auth_p p{
+        font-size: 16px !important;
+    }
+
+    .auth_p img {
+        width: 40px !important;
+        height: 25px !important;
+    }
+
+    .auth_menu {
+        width: 300px !important;
+        height: 360px !important;
+        overflow: inherit !important;
+    }
+
+    .logo_page img {
         display: none;
     }
+
+    .section_menu {
+        margin-top: 20px !important;
+    }
+    .menu_title h4{
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    .menu_title p {
+        font-size: 12px !important;
+    }
+
+    .form-group label {
+        font-size: 14px !important;
+    }
+
+    .form-group input {
+        width: 90% !important;
+    }
+
+    .btn_auth {
+        font-size: 14px;
+    }
+
+    footer {
+        height: 80px !important;
+        line-height: 40px !important;
+        margin-top: 60px !important;
+    }
+
+    .footer_txt {
+        font-size: 12px !important;
+        margin-left: 0 !important;
+    }
+
+    /*pay*/
+
+    .pay_head {
+        flex-direction: column;
+    }
+
+    .pay_right {
+        width: 100% !important;
+        height: 750px !important;
+    }
+
+    .pay_left {
+        width: 100% !important;
+    }
+
+    .pay_ol {
+        margin-left: 0 !important;
+    }
+
+    /*hotline*/
+
+    .hotline_head {
+        flex-direction: column;
+    }
+
+    .hotline_right {
+        width: 100% !important;
+        height: 750px !important;
+    }
+
+    .hotline_left {
+        width: 100% !important;
+    }
+
+    .hotline_title h2{
+        font-size: 18px !important;
+        line-height: 40px !important;
+    }
+
+    .hotline_img{
+        flex-direction: column;
+    }
+
+    .hotline_img img {
+        width: 50px !important;
+        height: 50px !important;
+        margin-left: 50px;
+    }
+
+    .hotline_menu_img img{
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .hotline_menu_img p{
+        font-size: 18px !important;
+    }
+
+    .hotline_pic {
+        display: none;
+    }
+
+    .hotline_numb {
+         flex-direction: column;
+         margin-left: 0 !important;
+         gap: 0 !important;
+     }
+
+    .hotline_number {
+        flex-direction: column;
+        margin-right: 60px !important;
+        gap: 0 !important;
+    }
+
+    .menu {
+        font-size: 14px !important;
+        gap: 10px !important;
+    }
+
+    .menu h4 {
+        font-size: 20px;
+    }
+
+    /*service*/
+
+    .service_head {
+        flex-direction: column;
+    }
+
+    .service_right {
+        width: 100% !important;
+        height: 750px !important;
+    }
+
+    .service_left {
+        width: 100% !important;
+    }
+
+    .section_head {
+        flex-direction: column !important;
+    }
+
+    .service_ol {
+        flex-direction: column;
+    }
+
+    .main_service {
+        width: 250px !important;
+        height: 470px !important;
+    }
+
+    #mainn {
+        display: none;
+    }
+
+    .service_ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_menu p {
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    .service_title h4{
+        font-size: 24px !important;
+    }
+
+    .service_title p {
+        font-size: 10px !important;
+    }
+
+    .service_uul li{
+        font-size: 12px !important;
+    }
+
+    .service_foot {
+        margin-left: 0 !important;
+    }
+
+    .cash_table {
+        font-size: 14px !important;
+    }
+
+    .cash_ol li {
+        font-size: 14px !important;
+    }
+
+    .service_section {
+        width: 320px !important;
+        height: 820px !important;
+        margin-left: 0 !important;
+    }
+
+    /*news*/
+
+    .news_head {
+        flex-direction: column;
+    }
+
+
+    .news_right {
+        width: 100% !important;
+        height: 750px !important;
+    }
+
+    .news_left {
+        width: 100% !important;
+    }
+
+    .news-title {
+        font-size: 18px !important;
+    }
+
+    .logo_page {
+        gap: 20px !important;
+    }
+
+    .container p {
+        font-size: 12px !important;
+    }
+
+    .btn_meter {
+        margin-left: 100px !important;
+    }
+
 }
+
 
 
 

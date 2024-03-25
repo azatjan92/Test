@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="container" style=" background-color: #E4E9F7; border: 1px solid #e2e8f0; max-width: 400px; margin: 50px auto; padding: 20px;">
-        <div style="display: flex; gap: 40px; cursor: pointer; justify-content: space-between">
+        <div  style="display: flex; gap: 40px; cursor: pointer; justify-content: space-between">
             <a style="text-decoration: none; display: flex; gap: 20px; justify-content: space-between" href="/auth">
                 <img style="width: 40px; height: 40px; border-radius: 10px" src="{{asset('image/log.jpg')}}" alt="">
-                <span style="margin-left: 200px; margin-top: 10px; color: red">перейти назад</span>
+                <span  style="margin-left: 200px; margin-top: 10px; color: red">перейти назад</span>
             </a>
         </div>
         <div class="row justify-content-center">
